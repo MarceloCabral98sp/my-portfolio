@@ -31,11 +31,15 @@ const Header = () => {
 };
 
 const Nav = styled.nav`
+  position: fixed;
+  width: 100%;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px;
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 
   @media (max-width: 600px) {
     flex-direction: column;
