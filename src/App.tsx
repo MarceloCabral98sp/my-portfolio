@@ -2,6 +2,7 @@ import './App.css'
 // import { useTranslation } from 'react-i18next'
 import Header from './components/header';
 import About from './components/portfolio-content/about';
+import Contact from './components/portfolio-content/contact';
 import Home from './components/portfolio-content/home';
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
       <Header></Header>
       <Home></Home>
       <About></About>
+      {/* projetos */}
+
+      <Contact></Contact>
     </>
     // <div className="home">
     //   <h1 className="home-title">{ t('pages.home.title')}</h1>
