@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './components/footer';
 // import { useTranslation } from 'react-i18next'
 import Header from './components/header';
 import About from './components/portfolio-content/about';
@@ -18,6 +19,7 @@ function App() {
       {/* projetos */}
 
       <Contact></Contact>
+      <Footer></Footer>
     </>
     // <div className="home">
     //   <h1 className="home-title">{ t('pages.home.title')}</h1>
