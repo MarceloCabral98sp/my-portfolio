@@ -1,9 +1,10 @@
-import React, { FormEvent } from "react";
+import React, { FormEvent, forwardRef } from "react";
 import styled from "styled-components";
 import Swal from 'sweetalert2'
 
-const Contact = () => {
+const Contact = forwardRef<HTMLDivElement>((props, ref) => {
 
+    // const contactRef = useRef(null);
     
     const onSubmit = async (event: FormEvent) => {
         event.preventDefault();
@@ -37,7 +38,9 @@ const Contact = () => {
     }
 
     return (
-        <ContactContainer>
+        <ContactContainer
+            ref={ref}
+        >
             <ContactContent>
                 <h1>Contato</h1>
                 <p>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
@@ -63,7 +66,7 @@ const Contact = () => {
 
         </ContactContainer>
     )
-}
+});
 
 const ContactContainer = styled.section`
     padding: 60px 0;

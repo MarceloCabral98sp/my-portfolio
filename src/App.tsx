@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import './App.css'
 import Footer from './components/footer';
 // import { useTranslation } from 'react-i18next'
@@ -8,6 +9,14 @@ import Home from './components/portfolio-content/home';
 
 function App() {
 
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  const scrollToSection = () => {
+    if(sectionRef.current) {
+      sectionRef.current.scrollIntoView({ behavior: 'smooth'});
+    }
+  }
+
   // const { t, i18n } = useTranslation();
 
   return (
@@ -15,10 +24,10 @@ function App() {
     <>
       <Header></Header>
       <Home></Home>
-      <About></About>
+      <About scrollToSection={scrollToSection}></About>
       {/* projetos */}
 
-      <Contact></Contact>
+      <Contact ref={sectionRef}></Contact>
       <Footer></Footer>
     </>
     // <div className="home">
