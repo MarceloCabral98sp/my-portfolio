@@ -1,39 +1,67 @@
+import React from "react";
 import styled from "styled-components";
 
-const About = () => {
+interface AboutProps {
+    scrollToSection: () => void;
+ }
+
+const About: React.FC<AboutProps> = ({ scrollToSection }) => {
+
     return (
-        <AboutContainer>
-            <AboutContent>
+        <AboutSection>
+            <AboutContainer>
                 <AboutTitle>
                     <h1>Sobre</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iure illo similique, dicta sapiente molestias assumenda. Nobis laborum vel suscipit ipsam incidunt, illum quos excepturi!</p>
+                    <p>Aqui você encontrará informações sobre mim, como a minha experiência e minhas habilidades dentro da programação</p>
                 </AboutTitle>
                 <AboutSkills>
-                    <div>
+                    <SkillsInfo>
                         <h1>Quem eu sou?</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus delectus tempora debitis eligendi voluptas minus nulla. Quia voluptate eos quos facere laudantium corporis accusantium voluptatibus nobis modi repellendus cumque adipisci cum sapiente provident tempore eum fuga voluptatum sequi, ipsa inventore earum suscipit velit, libero delectus! Id, quisquam? Magnam libero ad esse laudantium aspernatur temporibus earum nisi, possimus nihil soluta mollitia cum, optio pariatur molestias impedit. Optio eum hic pariatur ex numquam accusamus libero, sint magni! Voluptate dolore perferendis quis quos iste totam voluptatem aspernatur maxime accusamus non animi, nesciunt quia facere sapiente id numquam ad laborum quas quidem? Ex totam nihil fuga, laboriosam velit neque tempora dolor magni, asperiores suscipit voluptatum molestiae maiores aspernatur at! Repellat, vel.</p>
+                        <p>
+                            Eu sou apaixonado por construção de aplicações e trabalho como TI desde 2019. Terminei a graduação em Análise e Desenvolvimento de Sistemas em 2020, e desde então já tive experiência dentro da área de TI como Quality Assurance e como desenvolvedor.
+                        </p>
+                        <p>
+                            Como desenvolvedor, atuei na modernização de uma plataforma de investimentos
+                            de um grande banco utilizando Angular nas versões 8 e 12, Jasmine, Jest, CMS da Oracle, CloudBees, Google Analytics, e mais. Como QA, atuei na criação e execução de casos de testes, HP ALM, Octane e técnica BDD para desenvolvimento ágil.
+                        </p>
+                        <p>
+                        Estou aberto a oportunidades de trabalho onde eu possa contribuir, aprender e crescer. Se você tiver uma oportunidade que corresponda às minhas habilidades e experiência, entre em contato comigo.
+                        </p>
                         <HomeButton>
-                        <a className="btn" href="#">Contatar</a>
-                    </HomeButton>
-                    </div>
-                    <div>
+                            <a className="btn" onClick={scrollToSection}>Contatar</a>
+                        </HomeButton>
+                    </SkillsInfo>
+                    <SkillsInfo>
                         <h1>Habilidades</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus delectus tempora debitis eligendi voluptas minus nulla. Quia voluptate eos quos facere laudantium corporis accusantium voluptatibus nobis modi repellendus cumque adipisci cum sapiente provident tempore eum fuga voluptatum sequi, ipsa inventore earum suscipit velit, libero delectus! Id, quisquam? Magnam libero ad esse laudantium aspernatur temporibus earum nisi, possimus nihil soluta mollitia cum, optio pariatur molestias impedit. Optio eum hic pariatur ex numquam accusamus libero, sint magni! Voluptate dolore perferendis quis quos iste totam voluptatem aspernatur maxime accusamus non animi, nesciunt quia facere sapiente id numquam ad laborum quas quidem? Ex totam nihil fuga, laboriosam velit neque tempora dolor magni, asperiores suscipit voluptatum molestiae maiores aspernatur at! Repellat, vel.</p>
-                    </div>
+                        <Skills>
+                            <div>HTML</div>
+                            <div>CSS</div>
+                            <div>JavaScript</div>
+                            <div>Angular</div>
+                            <div>React</div>
+                            <div>SASS</div>
+                            <div>GIT</div>
+                            <div>Azure</div>
+                            <div>Design Respondivo</div>
+                            <div>REST</div>
+                            <div>SCRUM</div>
+                            <div>Google Analytics</div>
+                        </Skills>
+                    </SkillsInfo>
                 </AboutSkills>
 
-            </AboutContent>
-        </AboutContainer>
+            </AboutContainer>
+        </AboutSection>
     )
 };
 
-const AboutContainer = styled.section`
+const AboutSection = styled.section`
     padding: 60px 0;
     background-color: #FAFAFA;
 `;
 
-const AboutContent = styled.div`
-    max-width: 120rem;
+const AboutContainer = styled.div`
+    max-width: 1200px;
     margin: auto;
     width: 92%;
 `;
@@ -61,12 +89,40 @@ const AboutSkills = styled.div`
     grid-gap: 10rem;
 `;
 
+const SkillsInfo = styled.div`
+    h1 {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+    
+    p {
+        color: #666;
+        margin-bottom: 8px;
+    }
+`;
+
 const HomeButton = styled.div`
     margin-top: 48px;
-    text-align: center;
+    transform: 0.4;
 
     a {
         text-decoration: none;
+        cursor: pointer;
+    }
+`;
+
+const Skills = styled.div`
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+        background-color: rgba(153, 153, 153, 0.2);
+        color: #666; 
+        border-radius: 4px;
+        padding: 8px 24px;
+        margin: 0 16px 16px 0;
+        font-weight: 600;
     }
 `;
 
