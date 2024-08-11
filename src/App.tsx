@@ -6,6 +6,7 @@ import Header from './components/header';
 import About from './components/portfolio-content/about';
 import Contact from './components/portfolio-content/contact';
 import Home from './components/portfolio-content/home';
+import Projects from './components/portfolio-content/projects';
 
 function App() {
 
@@ -25,8 +26,7 @@ function App() {
       <Header></Header>
       <Home></Home>
       <About scrollToSection={scrollToSection}></About>
-      {/* projetos */}
-
+      <Projects></Projects>
       <Contact ref={sectionRef}></Contact>
       <Footer></Footer>
     </>
