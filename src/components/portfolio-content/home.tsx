@@ -3,7 +3,6 @@ import styled from "styled-components";
 const Home = () => {
     return (
         <HomeContainer>
-
             <HomeContent>
                 <HomeTitle>Olá! Me chamo Marcelo Cabral</HomeTitle>
                 <HomeSubtitle>Sou um Desenvolvedor Web apaixonado por tecnologia, e trabalho
@@ -23,9 +22,7 @@ const HomeContainer = styled.section`
     height: 100vh;
     // min-height: 80rem;
     max-height: 120rem;
-    background-image: conic-gradient(from 90deg at -10% 100%, #bcc1cd 0deg, #bcc1cd 90deg, #fff 1turn);
-
-    border: 0.6px solid green;
+    background: linear-gradient(to right, rgba(245, 245, 245, 0.95), rgba(245, 245, 245, 0.95)), url(src/assets/images/lightmode-image.png);
 `;
 
 const HomeContent = styled.div`

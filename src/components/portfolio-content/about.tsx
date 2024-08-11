@@ -29,7 +29,7 @@ const About = () => {
 
 const AboutContainer = styled.section`
     padding: 60px 0;
-    border: 0.2px solid pink;
+    background-color: #FAFAFA;
 `;
 
 const AboutContent = styled.div`
