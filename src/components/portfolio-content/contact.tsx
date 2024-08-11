@@ -72,9 +72,7 @@ const ContactContainer = styled.section`
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-
-
-    border: 1px solid black;
+    background: linear-gradient(to right, rgba(245, 245, 245, 0.95), rgba(245, 245, 245, 0.95)), url(src/assets/images/lightmode-image.png);
 `;
 
 const ContactContent = styled.section`
@@ -83,6 +81,7 @@ const ContactContent = styled.section`
 `;
 
 const ContactForm = styled.form`
+    background-color: white;
     max-width: 600px;
     width: 100%;
     padding: 24px 24px 32px;
