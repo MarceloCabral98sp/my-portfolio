@@ -1,8 +1,9 @@
+import { forwardRef } from "react";
 import styled from "styled-components";
 
-const Projects = () => {
+const Projects = forwardRef<HTMLDivElement>((props, ref) => {
     return(
-        <ProjectsSection>
+        <ProjectsSection ref={ref}>
             <ProjectsContainer>
                 <ProjectsHeader>
                     <h1>Projetos</h1>
@@ -50,7 +51,7 @@ const Projects = () => {
         
         </ProjectsSection>
     )
-}
+});
 
 const ProjectsSection = styled.section`
     padding: 60px 0;

@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 interface AboutProps {
-    scrollToSection: () => void;
- }
+    scrollToContact: () => void;
+}
 
-const About: React.FC<AboutProps> = ({ scrollToSection }) => {
+const About = React.forwardRef<HTMLDivElement, AboutProps>(({ scrollToContact }, ref) => {
 
     return (
-        <AboutSection>
+        <AboutSection ref={ref}>
             <AboutContainer>
                 <AboutTitle>
                     <h1>Sobre</h1>
@@ -28,7 +28,7 @@ const About: React.FC<AboutProps> = ({ scrollToSection }) => {
                         Estou aberto a oportunidades de trabalho onde eu possa contribuir, aprender e crescer. Se você tiver uma oportunidade que corresponda às minhas habilidades e experiência, entre em contato comigo.
                         </p>
                         <HomeButton>
-                            <a className="btn" onClick={scrollToSection}>Contatar</a>
+                            <a className="btn" onClick={scrollToContact}>Contatar</a>
                         </HomeButton>
                     </SkillsInfo>
                     <SkillsInfo>
@@ -53,7 +53,7 @@ const About: React.FC<AboutProps> = ({ scrollToSection }) => {
             </AboutContainer>
         </AboutSection>
     )
-};
+});
 
 const AboutSection = styled.section`
     padding: 60px 0;
