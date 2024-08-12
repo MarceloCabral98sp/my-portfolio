@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 interface AboutProps {
     scrollToSection: () => void;
- }
+}
 
 const About: React.FC<AboutProps> = ({ scrollToSection }) => {
 

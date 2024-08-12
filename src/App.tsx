@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import './App.css'
+import './App.scss'
 import Footer from './components/footer';
 // import { useTranslation } from 'react-i18next'
 import Header from './components/header';
