@@ -17,15 +17,16 @@
     list-style: none;
   }
 
-  ul a {
+  ul li {
     display: block;
     text-decoration: none;
     color: #333333;
     text-transform: uppercase;
     font-weight: 600;
+    cursor: pointer;
   }
 
-  ul a:hover {
+  ul li:hover {
     color: #087ea4;
   }
 }

@@ -1,7 +1,17 @@
 import './header.scss';
 import { useState } from "react";
 
-const Header = () => {
+type HeaderProps = {
+  scrollToSection: (ref: React.RefObject<HTMLDivElement>) => void;
+  refs: {
+    homeRef: React.RefObject<HTMLDivElement>;
+    aboutRef: React.RefObject<HTMLDivElement>;
+    projectsRef: React.RefObject<HTMLDivElement>;
+    contactRef: React.RefObject<HTMLDivElement>;
+  };
+};
+
+const Header: React.FC<HeaderProps> = ({ scrollToSection, refs}) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   // const setOpenedState = () => {
@@ -25,18 +35,10 @@ const Header = () => {
       </div>
 
       <ul className={menuOpen ? "open" : ""}>
-        <li>
-          <a href="#">home</a>
-        </li>
-        <li>
-          <a href="#about">sobre</a>
-        </li>
-        <li>
-          <a href="#">projetos</a>
-        </li>
-        <li>
-          <a href="#">contato</a>
-        </li>
+        <li onClick={() => scrollToSection(refs.homeRef)}>início</li>
+        <li onClick={() => scrollToSection(refs.aboutRef)}>sobre</li>
+        <li onClick={() => scrollToSection(refs.projectsRef)}>projetos</li>
+        <li onClick={() => scrollToSection(refs.contactRef)}>contato</li>
       </ul>
     </header>
   );

@@ -1,8 +1,13 @@
+import React from "react";
 import styled from "styled-components";
 
-const Home = () => {
+interface ProjectsProps {
+    scrollToProjects: () => void;
+}
+
+const Home = React.forwardRef<HTMLDivElement, ProjectsProps>(({ scrollToProjects }, ref) => {
     return (
-        <HomeContainer>
+        <HomeContainer ref={ref}>
             <HomeContent>
                 <HomeTitle>Olá! Me chamo Marcelo Cabral</HomeTitle>
                 <HomeSubtitle>Sou um Desenvolvedor Web apaixonado por tecnologia, e trabalho
@@ -10,12 +15,12 @@ const Home = () => {
                 </HomeSubtitle>
                 
                 <HomeButton>
-                    <a className="btn" href="#">Projetos</a>
+                    <a className="btn" onClick={scrollToProjects}>Projetos</a>
                 </HomeButton>
             </HomeContent>
         </HomeContainer>
     )
-}
+});
 
 const HomeContainer = styled.section`
     position: relative;

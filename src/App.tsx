@@ -10,11 +10,14 @@ import Projects from './components/portfolio-content/projects';
 
 function App() {
 
-  const sectionRef = useRef<HTMLDivElement>(null);
+  const homeRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
 
-  const scrollToSection = () => {
-    if(sectionRef.current) {
-      sectionRef.current.scrollIntoView({ behavior: 'smooth'});
+  const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
+    if(ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth'});
     }
   }
 
@@ -23,11 +26,15 @@ function App() {
   return (
 
     <>
-      <Header></Header>
-      <Home></Home>
-      <About scrollToSection={scrollToSection}></About>
-      <Projects></Projects>
-      <Contact ref={sectionRef}></Contact>
+      <Header 
+        scrollToSection={scrollToSection}
+        refs={{ homeRef, aboutRef, projectsRef, contactRef}}
+      ></Header>
+      {/* <Home ref={homeRef}></Home> */}
+      <Home scrollToProjects={() => scrollToSection(projectsRef)} ref={homeRef}></Home>
+      <About scrollToContact={() => scrollToSection(contactRef)} ref={aboutRef}></About>
+      <Projects ref={projectsRef}></Projects>
+      <Contact ref={contactRef}></Contact>
       <Footer></Footer>
     </>
     // <div className="home">
