@@ -5,7 +5,7 @@ import Footer from './components/footer';
 import Header from './components/header';
 import About from './components/portfolio-content/about';
 import Contact from './components/portfolio-content/contact';
-import Home from './components/portfolio-content/home';
+import Home from './components/home/index';
 import Projects from './components/portfolio-content/projects';
 
 function App() {
@@ -30,7 +30,6 @@ function App() {
         scrollToSection={scrollToSection}
         refs={{ homeRef, aboutRef, projectsRef, contactRef}}
       ></Header>
-      {/* <Home ref={homeRef}></Home> */}
       <Home scrollToProjects={() => scrollToSection(projectsRef)} ref={homeRef}></Home>
       <About scrollToContact={() => scrollToSection(contactRef)} ref={aboutRef}></About>
       <Projects ref={projectsRef}></Projects>
