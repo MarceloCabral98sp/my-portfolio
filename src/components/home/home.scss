@@ -1,0 +1,36 @@
+.home-section {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(245, 245, 245, 0.95), rgba(245, 245, 245, 0.95)), url(src/assets/images/lightmode-image.png);
+    
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 92%;
+
+        &--title {
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 800;
+            font-size: 40px;
+        }
+
+        &--subtitle {
+            margin: 48px auto 0 auto;
+            line-height: 1.7;
+            text-align: center;
+        }
+
+        &--button {
+            margin-top: 48px;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }   
+}   
