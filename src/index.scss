@@ -20,6 +20,7 @@ h2 {
     color: #333333;
 }
 
+
 p {
     font-size: 18px;
     line-height: 1.7;
@@ -27,7 +28,7 @@ p {
 }
 
 .btn {
-    padding: 15px 80px;
+    padding: 14px 80px;
     font-size: 18px;
     background-color: #087ea4;
     color: #ffffff;
@@ -71,4 +72,10 @@ p {
     src: url('assets/fonts/Gotham/gotham-black.woff2') format('truetype');
     font-weight: 900;
     font-style: normal;
+}
+
+@media (max-width: 600px) {
+    p {
+        font-size: 14px;
+    }
 }

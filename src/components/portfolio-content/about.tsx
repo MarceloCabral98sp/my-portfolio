@@ -27,9 +27,9 @@ const About = React.forwardRef<HTMLDivElement, AboutProps>(({ scrollToContact },
                         <p>
                         Estou aberto a oportunidades de trabalho onde eu possa contribuir, aprender e crescer. Se você tiver uma oportunidade que corresponda às minhas habilidades e experiência, entre em contato comigo.
                         </p>
-                        <HomeButton>
+                        <div>
                             <a className="btn" onClick={scrollToContact}>Contatar</a>
-                        </HomeButton>
+                        </div>
                     </SkillsInfo>
                     <SkillsInfo>
                         <h1>Habilidades</h1>
@@ -101,15 +101,7 @@ const SkillsInfo = styled.div`
     }
 `;
 
-const HomeButton = styled.div`
-    margin-top: 48px;
-    transform: 0.4;
 
-    a {
-        text-decoration: none;
-        cursor: pointer;
-    }
-`;
 
 const Skills = styled.div`
     margin-top: 16px;
