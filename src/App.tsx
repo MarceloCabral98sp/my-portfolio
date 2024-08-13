@@ -6,7 +6,7 @@ import Header from './components/header';
 import About from './components/about/index';
 import Contact from './components/portfolio-content/contact';
 import Home from './components/home/index';
-import Projects from './components/portfolio-content/projects';
+import Projects from './components/projects/index';
 
 function App() {
 
