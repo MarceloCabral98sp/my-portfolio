@@ -28,7 +28,8 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
             Swal.fire({
                 title: 'Sucesso!',
                 text: 'Email enviado com sucesso',  
-                icon: 'success'
+                icon: 'success',
+                confirmButtonColor: '#087ea4'
             });
 
             form.reset();
@@ -59,9 +60,12 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
                         <textarea name="message" className="message" placeholder="Digite a sua mensagem..." required/>
                     </div>
 
-                    <div className='contact-section__button'>
-                        <a className='btn'>Enviar</a>
+                    <div className="contact-section__btn-position">
+                        <button className='contact-section__button'>
+                            <a className='btn'>Enviar</a>
+                        </button>
                     </div>
+
                 </form>
             </div>
         </section>

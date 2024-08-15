@@ -17,6 +17,10 @@
         h1 {
             margin-bottom: 32px;
         }
+
+        p {
+            max-width: 800px;
+        }
     }
 
     &__form {
@@ -64,10 +68,13 @@
             resize: none;
         }
     }
+    
+    &__btn-position {
+        text-align: end;
+    }
 
     &__button {
-        margin-top: 48px;
-        text-align: end;
+        border: none;
 
         a {
             padding: 14px 48px;
@@ -77,7 +84,10 @@
 
 @media (max-width: 600px) {
     .contact-section {
+
         &__button {
+            width: 100%;
+
             a {
                 width: 100%;
                 text-align: center;
@@ -85,3 +95,4 @@
         }
     }
 }
+ 
