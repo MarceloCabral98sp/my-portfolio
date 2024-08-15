@@ -4,7 +4,7 @@ import Footer from './components/footer';
 // import { useTranslation } from 'react-i18next'
 import Header from './components/header';
 import About from './components/about/index';
-import Contact from './components/portfolio-content/contact';
+import Contact from './components/contact/index';
 import Home from './components/home/index';
 import Projects from './components/projects/index';
 
