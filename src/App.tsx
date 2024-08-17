@@ -7,8 +7,12 @@ import About from './components/about/index';
 import Contact from './components/contact/index';
 import Home from './components/home/index';
 import Projects from './components/projects/index';
+import { useDarkMode } from './context/darkmode-context';
 
 function App() {
+
+  const { darkMode } = useDarkMode();
+
 
   const homeRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -25,7 +29,7 @@ function App() {
 
   return (
 
-    <>
+    <div className={darkMode ? 'dark-mode' : 'light-mode'}>
       <Header 
         scrollToSection={scrollToSection}
         refs={{ homeRef, aboutRef, projectsRef, contactRef}}
@@ -35,7 +39,7 @@ function App() {
       <Projects ref={projectsRef}></Projects>
       <Contact ref={contactRef}></Contact>
       <Footer></Footer>
-    </>
+    </div>
     // <div className="home">
     //   <h1 className="home-title">{ t('pages.home.title')}</h1>
 

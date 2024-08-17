@@ -1,5 +1,6 @@
+import { useDarkMode } from '../../context/darkmode-context';
 import './header.scss';
-import { useState } from "react";
+import { RefObject, useState } from "react";
 
 type HeaderProps = {
   scrollToSection: (ref: React.RefObject<HTMLDivElement>) => void;
@@ -14,15 +15,25 @@ type HeaderProps = {
 const Header: React.FC<HeaderProps> = ({ scrollToSection, refs}) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // const setOpenedState = () => {
-  //   let reverseOpened = menuOpen;
+  const { darkMode, toggleDarkMode } = useDarkMode();
 
-  //   setMenuOpen(!reverseOpened);
-  // }
+  const darkPath: string = 'src/assets/icons/moon.png';
+  const lightPath: string = 'src/assets/icons/sun.png';
+
+
+  const navigateToSection = (section: RefObject<HTMLDivElement>) => {
+    scrollToSection(section)
+    setMenuOpen(false);
+  }
 
   return (
     <header className='header-container'>
       <h2 className='header-container__logo'>MARCELO CABRAL</h2>
+
+      <div className='header-container__light-dark-icons' onClick={toggleDarkMode}>
+          <img className={darkMode ? 'white-icon' : '' } src={!darkMode ? darkPath : lightPath} alt="Ícone para selecionar modo constraste" />
+      </div>
+
       <div
         className={`mobile-menu ${menuOpen? 'open': ''}`}
         onClick={() => {
@@ -35,10 +46,10 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection, refs}) => {
       </div>
 
       <ul className={menuOpen ? "open" : ""}>
-        <li onClick={() => scrollToSection(refs.homeRef)}>início</li>
-        <li onClick={() => scrollToSection(refs.aboutRef)}>sobre</li>
-        <li onClick={() => scrollToSection(refs.projectsRef)}>projetos</li>
-        <li onClick={() => scrollToSection(refs.contactRef)}>contato</li>
+        <li onClick={() => navigateToSection(refs.homeRef)}>início</li>
+        <li onClick={() => navigateToSection(refs.aboutRef)}>sobre</li>
+        <li onClick={() => navigateToSection(refs.projectsRef)}>projetos</li>
+        <li onClick={() => navigateToSection(refs.contactRef)}>contato</li>
       </ul>
     </header>
   );

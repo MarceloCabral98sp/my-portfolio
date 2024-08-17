@@ -12,19 +12,19 @@ body {
 
 h1 {
     font-size: 32px;
-    color: #333333;
+    color: var(--color-primary);
 }
 
 h2 {
     font-size: 24px;
-    color: #333333;
+    color: var(--color-primary);
 }
 
 
 p {
     font-size: 18px;
     line-height: 1.7;
-    color: #333333;
+    color: var(--color-secondary);
 }
 
 .btn {
@@ -80,3 +80,4 @@ p {
         font-size: 14px;
     }
 }
+
