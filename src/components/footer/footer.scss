@@ -1,7 +1,8 @@
 .footer-section {
     height: 120px;
     padding: 16px;
-    background-color: #030303;
+    background-color: #121212;
+    box-shadow: var(--box-shadow);
 
     &__container {
         display: flex;

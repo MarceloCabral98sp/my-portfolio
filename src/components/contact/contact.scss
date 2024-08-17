@@ -1,6 +1,6 @@
 .contact-section {
     padding: 132px 0;
-    background: linear-gradient(to right, rgba(245, 245, 245, 0.95), rgba(245, 245, 245, 0.95)), url(src/assets/images/lightmode-image.png);
+    background: var(--background-image);
 
     &__container {
         text-align: center;
@@ -26,7 +26,7 @@
     }
 
     &__form {
-        background-color: #FFFFFF;
+        background-color: var(--background-color-form);
         max-width: 800px;
         width: 100%;
         padding: 24px 24px 32px;
@@ -44,24 +44,25 @@
         label {
             font-size: 14px;
             font-weight: 600;
-            color: #666666;
+            color: var(--color-secondary);
         }
 
         input, textarea {
             width: 100%;
             height: 60px;
             background-color: rgba(153, 153, 153, 0.2);
-            border: 2px solid #ddd;
+            border: none;
             outline: none;
+            font-weight: 600;
             border-radius: 8px;
             padding: 16px;
             font-size: 16px;
-            color: #333;
+            color: var(--color-secondary);
             margin-top: 8px;
         }
 
         textarea, input::placeholder {
-            color: #666;
+            color: var(--color-secondary);
             font-weight: 600;
         }
 
@@ -77,6 +78,7 @@
 
     &__button {
         border: none;
+        background-color: var(--background-color-form);
 
         a {
             padding: 14px 48px;

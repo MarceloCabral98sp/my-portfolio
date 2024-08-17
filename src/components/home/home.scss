@@ -1,7 +1,7 @@
 .home-section {
     position: relative;
     height: 100vh;
-    background: linear-gradient(to right, rgba(245, 245, 245, 0.95), rgba(245, 245, 245, 0.95)), url(src/assets/images/lightmode-image.png);
+    background: var(--background-image);
     
     &__content {
         position: absolute;

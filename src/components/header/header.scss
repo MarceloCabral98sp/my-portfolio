@@ -7,8 +7,8 @@
   justify-content: space-between;
   align-items: center;
 
-  background-color: white;
-  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+  background-color: var(--background-color-primary);
+  box-shadow: var(--box-shadow);
   z-index: 1000;
 
   ul {
@@ -20,7 +20,7 @@
   ul li {
     display: block;
     text-decoration: none;
-    color: #333333;
+    color: var(--color-primary);
     text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
@@ -28,6 +28,18 @@
 
   ul li:hover {
     color: #087ea4;
+  }
+
+  &__light-dark-icons {
+
+    img {
+      width: 24px;
+      height: auto;
+    }
+
+    .white-icon {
+      filter: invert(100%);
+    }
   }
 }
 
@@ -57,7 +69,7 @@
     ul li {
       width: 100%;
       text-align: center;
-      border-bottom: 1px solid #eee;
+      border-bottom: var(--border-bottom);
       font-size: 14px;
       padding-bottom: 16px;
     }
@@ -83,7 +95,7 @@
     height: 3px;
     margin-bottom: 5px;
     border-radius: 5px;;
-    background: #333333;
+    background: var(--color-primary);
     transition: all 0.3s ease-in-out;
   }
 
