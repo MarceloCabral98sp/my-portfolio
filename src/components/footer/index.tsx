@@ -1,6 +1,9 @@
+import { useTranslation } from 'react-i18next';
 import './footer.scss';
 
 const Footer = () => {
+
+    const { t } = useTranslation(); 
 
     const currentYear = new Date().getFullYear();
     return (
@@ -8,17 +11,17 @@ const Footer = () => {
             <div className="footer-section__container">
                 <div className="footer-section__icons">
                     <a href="https://github.com/MarceloCabral98sp">
-                        <img src="src/assets/icons/github-svgrepo-com.svg" alt="Ícone do github" />
+                        <img src="src/assets/icons/github-svgrepo-com.svg" alt={ t('pages.footer.icons-description.github')} />
                     </a>
                 </div>
                 <div className="footer-section__icons">
                 <a href="https://www.linkedin.com/in/marcelo-cabral-72228416a/">
-                    <img src="src/assets/icons/linkedin-svgrepo-com.svg" alt="Ícone do linkedin" />
+                    <img src="src/assets/icons/linkedin-svgrepo-com.svg" alt={ t('pages.footer.icons-description.linkedin')} />
                 </a>
                 </div>
                 <div className="footer-section__icons">
                     <a href="https://www.youtube.com/@marcelocabral463">
-                        <img src="src/assets/icons/youtube-svgrepo-com.svg" alt="Ícone do youtube" />
+                        <img src="src/assets/icons/youtube-svgrepo-com.svg" alt={ t('pages.footer.icons-description.youtube')} />
                     </a>
                 </div>
             </div>

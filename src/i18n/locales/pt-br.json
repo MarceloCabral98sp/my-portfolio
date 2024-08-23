@@ -1,8 +1,69 @@
 {
     "translation": {
         "pages": {
+            "header": {
+                "home": "Início",
+                "about": "Sobre",
+                "projects": "Projetos",
+                "contact": "Contato",
+                "icon-description": "Ícone para selecionar modo constraste" 
+            },
             "home": {
-                "title": "bem-vindo"
+                "title": "Olá! Me chamo Marcelo Cabral",
+                "subtitle": "Sou um Desenvolvedor Web apaixonado por tecnologia, estou no mercado de TI desde 2019 com experiência em Desenvolvimento e QA.",
+                "button": "Projetos"
+            },
+            "about": {
+                "title": "Sobre",
+                "subtitle": "Aqui você encontrará informações sobre mim, como minha experiência e habilidades em programação.",
+                "info-title": "Quem sou eu?",
+                "info-description": [
+                    "Eu sou apaixonado por construção de aplicações e trabalho como TI desde 2019. Terminei a graduação em Análise e Desenvolvimento de Sistemas em 2020, e desde então já tive experiência dentro da área de TI como Quality Assurance e como desenvolvedor.",
+                    "Como desenvolvedor, atuei na modernização de uma plataforma de investimentos de um grande banco utilizando Angular nas versões 8 e 12, Jasmine, Jest, CMS da Oracle, CloudBees, Google Analytics, e mais. Como QA, atuei na criação e execução de casos de testes, HP ALM, Octane e técnica BDD para desenvolvimento ágil.",
+                    "Estou aberto a oportunidades de trabalho onde eu possa contribuir, aprender e crescer. Se você tiver uma oportunidade que corresponda às minhas habilidades e experiência, entre em contato comigo."
+                ],
+                "skills-title": "Habilidades",
+                "button": "Contato"
+            },
+            "projects": {
+                "title": "Projetos",
+                "subtitle": "Aqui você encontrará alguns dos meus projetos pessoais que criei e que estão por vir.",
+                "projects": [
+                    {
+                        "project-title": "Em Breve",
+                        "project-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, labore aspernatur! Quae quos, ad sapiente cum molestiae ipsa a earum? Optio, et voluptatum dolores sit quisquam nesciunt."
+                    },
+                    {
+                        "project-title": "Em Breve",
+                        "project-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, labore aspernatur! Quae quos, ad sapiente cum molestiae ipsa a earum? Optio, et voluptatum dolores sit quisquam nesciunt."
+                    },
+                    {
+                        "project-title": "Em Breve",
+                        "project-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, labore aspernatur! Quae quos, ad sapiente cum molestiae ipsa a earum? Optio, et voluptatum dolores sit quisquam nesciunt."
+                    }
+                ],
+                "button": "Ver Projeto",
+                "coming-soon": "Imagem de projeto em breve"
+            },
+            "contact": {
+                "title": "Contato",
+                "subtitle": "Preencha este formulário para entrar em contato comigo por email. Responderei o mais rápido possível.",
+                "form": {
+                    "name-label": "Nome",
+                    "name-placeholder": "Digite seu nome",
+                    "email-label": "Email",
+                    "email-placeholder": "Digite seu e-mail",
+                    "message-label": "Mensagem",
+                    "message-placeholder": "Digite sua mensagem..."
+                },
+                "button": "Enviar"
+            },
+            "footer": {
+                "icons-description": {
+                    "github": "Ícone do github",
+                    "linkedin": "Ícone do linkedin",
+                    "youtube": "Ícone do youtube"
+                }
             }
         }
     }

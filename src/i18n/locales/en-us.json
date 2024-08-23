@@ -1,8 +1,69 @@
 {
     "translation": {
         "pages": {
+            "header": {
+                "home": "Home",
+                "about": "About",
+                "projects": "projects",
+                "contact": "contact",
+                "icon-description": "Icon to select contrast mode" 
+            },
             "home": {
-                "title": "welcome"
+                "title": "Hi! I'm Marcelo Cabral",
+                "subtitle": "I am a Web Developer passionate about technology, I have been in the IT market since 2019 with experience in Development and QA.",
+                "button": "projects"
+            },
+            "about": {
+                "title": "About",
+                "subtitle": "Here you will find information about me, such as my experience and skills within programming.",
+                "info-title": "Who am i?",
+                "info-description": [
+                    "I am passionate about building applications and have been working as an IT professional since 2019. I graduated in Systems Analysis and Development in 2020, and since then I have had experience in the IT area as a Quality Assurance and as a developer.",
+                    "As a developer, I worked on the modernization of an investment platform for a large bank using Angular versions 8 and 12, Jasmine, Jest, Oracle CMS, CloudBees, Google Analytics, and more. As a QA, I worked on creating and executing test cases, HP ALM, Octane, and BDD techniques for agile development.",
+                    "I am open to job opportunities where I can contribute, learn and grow. If you have an opportunity that matches my skills and experience, please contact me."
+                ],
+                "skills-title": "Skills",
+                "button": "contact"
+            },
+            "projects": {
+                "title": "Projects",
+                "subtitle": "Here you will find some of my personal projects that I have created and that are upcoming.",
+                "projects": [
+                    {
+                        "project-title": "Coming Soon",
+                        "project-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, labore aspernatur! Quae quos, ad sapiente cum molestiae ipsa a earum? Optio, et voluptatum dolores sit quisquam nesciunt."
+                    },
+                    {
+                        "project-title": "Coming Soon",
+                        "project-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, labore aspernatur! Quae quos, ad sapiente cum molestiae ipsa a earum? Optio, et voluptatum dolores sit quisquam nesciunt."
+                    },
+                    {
+                        "project-title": "Coming Soon",
+                        "project-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, labore aspernatur! Quae quos, ad sapiente cum molestiae ipsa a earum? Optio, et voluptatum dolores sit quisquam nesciunt."
+                    }
+                ],
+                "button": "See Project",
+                "coming-soon": "Image of coming soon project"
+            },
+            "contact": {
+                "title": "contact",
+                "subtitle": "Fill out this form to contact me by email. I will respond as soon as possible.",
+                "form": {
+                    "name-label": "Name",
+                    "name-placeholder": "Enter your name",
+                    "email-label": "Email",
+                    "email-placeholder": "Enter your email",
+                    "message-label": "Message",
+                    "message-placeholder": "Enter your message..."
+                },
+                "button": "submit"
+            },
+            "footer": {
+                "icons-description": {
+                    "github": "Github icon",
+                    "linkedin": "Linkedin icon",
+                    "youtube": "Youtube icon"
+                }
             }
         }
     }
