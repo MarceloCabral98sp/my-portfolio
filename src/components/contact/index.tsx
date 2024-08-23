@@ -1,8 +1,11 @@
 import { FormEvent, forwardRef } from "react";
 import Swal from "sweetalert2";
 import './contact.scss';
+import { useTranslation } from "react-i18next";
 
 const Contact = forwardRef<HTMLDivElement>((props, ref) => {
+
+    const { t } = useTranslation();
 
     const onSubmit = async (event: FormEvent) => {
         event.preventDefault();
@@ -40,29 +43,29 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
         <section ref={ref} className="contact-section">
             <div className="contact-section__container">
                 <div className="contact-section__header">
-                    <h1>Contato</h1>
-                    <p>Preencha esse formulário para entrar em contato comigo por email. Vou responder o mais breve possível</p>
+                    <h1>{ t('pages.contact.title')}</h1>
+                    <p>{ t('pages.contact.subtitle')}</p>
                 </div>
 
                 <form className="contact-section__form" onSubmit={onSubmit}>
                     <div className="contact-section__input-box">
-                        <label>Nome</label>
-                        <input type="text" name="name" placeholder="Digite o seu nome" required/>
+                        <label>{ t('pages.contact.form.name-label')}</label>
+                        <input type="text" name="name" placeholder={ t('pages.contact.form.name-placeholder')} required/>
                     </div>
 
                     <div className="contact-section__input-box">
-                        <label>Email</label>
-                        <input type="email" name="email" placeholder="Digite o seu email" required/>
+                        <label>{ t('pages.contact.form.email-label')} </label>
+                        <input type="email" name="email" placeholder={ t('pages.contact.form.email-placeholder')}  required/>
                     </div>
 
                     <div className="contact-section__input-box">
-                        <label>Mensagem</label>
-                        <textarea name="message" className="message" placeholder="Digite a sua mensagem..." required/>
+                        <label>{ t('pages.contact.form.message-label')} </label>
+                        <textarea name="message" className="message" placeholder={ t('pages.contact.form.message-placeholder')}  required/>
                     </div>
 
                     <div className="contact-section__btn-position">
                         <button className='contact-section__button'>
-                            <a className='btn'>Enviar</a>
+                            <a className='btn'>{ t('pages.contact.button')} </a>
                         </button>
                     </div>
 

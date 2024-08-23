@@ -1,48 +1,51 @@
+import { useTranslation } from 'react-i18next';
 import './projects.scss';
 import { forwardRef } from 'react';
 
 const Projects = forwardRef<HTMLDivElement>((props, ref) => {
+
+    const { t } = useTranslation();
     return(
         <section className='projects-section' ref={ref}>
             <div className='projects-section__container'>
                 <div className='projects-section__header'>
-                    <h1>Projetos</h1>
-                    <p>Aqui você encontrará alguns dos meus projetos pessoais que criei e que estão por vir</p>
+                    <h1>{ t('pages.projects.title')}</h1>
+                    <p>{ t('pages.projects.subtitle')}</p>
                 </div>
 
                 <div>
                     <div className='projects-section__project-card'>
-                        <img src="src/assets/images/coming-soon.jpg" alt="Imagem sobre projeto que virá em breve" />
+                        <img src="src/assets/images/coming-soon.jpg" alt={ t('pages.projects.coming-soon') } />
                         <div>
-                            <h2>Coming Soon</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, labore aspernatur! Quae quos, ad sapiente cum molestiae ipsa a earum? Optio, et voluptatum dolores sit quisquam nesciunt.</p>
+                            <h2>{ t('pages.projects.projects.0.project-title') }</h2>
+                            <p>{ t('pages.projects.projects.0.project-description') }</p>
                         
                             <div className='button'>
-                                <a className="btn">Ver Caso</a>
+                                <a className="btn">{ t('pages.projects.button') }</a>
                             </div>
                         </div>
                     </div>
 
                     <div className='projects-section__project-card'>
-                        <img src="src/assets/images/coming-soon.jpg" alt="Imagem sobre projeto que virá em breve" />
+                        <img src="src/assets/images/coming-soon.jpg" alt={ t('pages.projects.coming-soon') } />
                         <div>
-                            <h2>Coming Soon</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, labore aspernatur! Quae quos, ad sapiente cum molestiae ipsa a earum? Optio, et voluptatum dolores sit quisquam nesciunt.</p>
+                            <h2>{ t('pages.projects.projects.1.project-title') }</h2>
+                            <p>{ t('pages.projects.projects.1.project-description') }</p>
                         
                             <div className='button'>
-                                <a className="btn">Ver Caso</a>
+                                <a className="btn">{ t('pages.projects.button') }</a>
                             </div>
                         </div>
                     </div>
 
                     <div className='projects-section__project-card'>
-                        <img src="src/assets/images/coming-soon.jpg" alt="Imagem sobre projeto que virá em breve" />
+                        <img src="src/assets/images/coming-soon.jpg" alt={ t('pages.projects.coming-soon') } />
                         <div>
-                            <h2>Coming Soon</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, labore aspernatur! Quae quos, ad sapiente cum molestiae ipsa a earum? Optio, et voluptatum dolores sit quisquam nesciunt.</p>
+                            <h2>{ t('pages.projects.projects.2.project-title') }</h2>
+                            <p>{ t('pages.projects.projects.2.project-description') }</p>
                         
                             <div className='button'>
-                                <a className="btn">Ver Caso</a>
+                                <a className="btn">{ t('pages.projects.button') }</a>
                             </div>
                         </div>
                     </div>
