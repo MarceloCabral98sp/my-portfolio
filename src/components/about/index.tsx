@@ -1,5 +1,5 @@
-import React from 'react';
 import './about.scss';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 interface AboutProps {
@@ -9,41 +9,50 @@ interface AboutProps {
 const About = React.forwardRef<HTMLDivElement, AboutProps>(({ scrollToContact}, ref) => {
 
     const { t } = useTranslation();
+
+    const skills = [
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'Angular',
+        'React',
+        'SASS',
+        'GIT',
+        'Azure',
+        'Design Responsivo',
+        'REST',
+        'SCRUM',
+        'Google Analytics'
+    ];
     
     return(
         <section className='about-section' ref={ref}>
             <div className='about-section__container'>
-                <div className='about-section__container--header'>
+                <div className='about-section__header'>
                     <h1>{ t('pages.about.title')}</h1>
                     <p>{ t('pages.about.subtitle')}</p>
                 </div>
-                <div className='about-section__container--description'>
-                    <div className='description-info'>
+                <div className='about-section__description'>
+                    <div className='about-section__description-info'>
                         <h2>{ t('pages.about.info-title')}</h2>
                         <p>{ t('pages.about.info-description.0')}</p>
                         <p>{ t('pages.about.info-description.1')}</p>
                         <p>{ t('pages.about.info-description.2')} </p>
-                        <div className='info-button' ref={ref} onClick={scrollToContact}>
-                            <a className='btn' onClick={scrollToContact}>{ t('pages.about.button')}</a>
-                        </div>
+
+                        <button 
+                            className='about-section__description-button btn'
+                            onClick={scrollToContact}
+                        >{ t('pages.about.button') }</button>
                     </div>
 
-                    <div className='description-info'>
+                    <div className='about-section__description-info'>
                         <h2>{ t('pages.about.skills-title')}</h2>
-                        <div className='description-info__items'>
-                            <div>HTML</div>
-                            <div>CSS</div>
-                            <div>JavaScript</div>
-                            <div>Angular</div>
-                            <div>React</div>
-                            <div>SASS</div>
-                            <div>GIT</div>
-                            <div>Azure</div>
-                            <div>Design Respondivo</div>
-                            <div>REST</div>
-                            <div>SCRUM</div>
-                            <div>Google Analytics</div>
-
+                        <div className='about-section__description-info-items'>
+                            { 
+                                skills.map((skill, index) => (
+                                    <div key={index}>{skill}</div>
+                                ))
+                            }
                         </div>
                     </div>
                 </div>
