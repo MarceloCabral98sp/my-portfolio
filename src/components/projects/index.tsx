@@ -1,10 +1,11 @@
-import { useTranslation } from 'react-i18next';
 import './projects.scss';
+import { useTranslation } from 'react-i18next';
 import { forwardRef } from 'react';
 
-const Projects = forwardRef<HTMLDivElement>((props, ref) => {
+const Projects = forwardRef<HTMLDivElement>((_, ref) => {
 
     const { t } = useTranslation();
+
     return(
         <section className='projects-section' ref={ref}>
             <div className='projects-section__container'>
@@ -20,9 +21,9 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
                             <h2>{ t('pages.projects.projects.0.project-title') }</h2>
                             <p>{ t('pages.projects.projects.0.project-description') }</p>
                         
-                            <div className='button'>
-                                <a className="btn">{ t('pages.projects.button') }</a>
-                            </div>
+                            <button className='btn'>
+                                { t('pages.projects.button') }
+                            </button>
                         </div>
                     </div>
 
@@ -32,9 +33,9 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
                             <h2>{ t('pages.projects.projects.1.project-title') }</h2>
                             <p>{ t('pages.projects.projects.1.project-description') }</p>
                         
-                            <div className='button'>
-                                <a className="btn">{ t('pages.projects.button') }</a>
-                            </div>
+                            <button className='btn'>
+                                { t('pages.projects.button') }
+                            </button>
                         </div>
                     </div>
 
@@ -44,9 +45,9 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
                             <h2>{ t('pages.projects.projects.2.project-title') }</h2>
                             <p>{ t('pages.projects.projects.2.project-description') }</p>
                         
-                            <div className='button'>
-                                <a className="btn">{ t('pages.projects.button') }</a>
-                            </div>
+                            <button className='btn'>
+                                { t('pages.projects.button') }
+                            </button>
                         </div>
                     </div>
                 </div>

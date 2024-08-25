@@ -42,7 +42,7 @@
                         "project-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, labore aspernatur! Quae quos, ad sapiente cum molestiae ipsa a earum? Optio, et voluptatum dolores sit quisquam nesciunt."
                     }
                 ],
-                "button": "See Project",
+                "button": "Check Project",
                 "coming-soon": "Image of coming soon project"
             },
             "contact": {
@@ -56,7 +56,15 @@
                     "message-label": "Message",
                     "message-placeholder": "Enter your message..."
                 },
-                "button": "submit"
+                "button": "submit",
+                "success-alert": {
+                    "title": "Success!",
+                    "text": "Email sent successfully"
+                },
+                "error-alert": {
+                    "title": "Error!",
+                    "text": "An error occurred while sending the email."
+                }
             },
             "footer": {
                 "icons-description": {

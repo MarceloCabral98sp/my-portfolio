@@ -56,7 +56,15 @@
                     "message-label": "Mensagem",
                     "message-placeholder": "Digite sua mensagem..."
                 },
-                "button": "Enviar"
+                "button": "Enviar",
+                "success-alert": {
+                    "title": "Sucesso!",
+                    "text": "Email enviado com sucesso"
+                },
+                "error-alert": {
+                    "title": "Erro!",
+                    "text": "Ocorreu um erro ao enviar o e-mail."
+                }
             },
             "footer": {
                 "icons-description": {
