@@ -2,6 +2,7 @@ import './home.scss';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import ReactGA from 'react-ga4';
+import { useNavigate } from 'react-router-dom';
 
 interface ProjectsProps {
     scrollToProjects: () => void;
@@ -10,6 +11,7 @@ interface ProjectsProps {
 const Home = React.forwardRef<HTMLDivElement, ProjectsProps>(({scrollToProjects}, ref) => {
     
     const { t } = useTranslation();
+    const navigate = useNavigate();
 
     return(
         <section ref={ref} className='home-section'>
@@ -27,6 +29,7 @@ const Home = React.forwardRef<HTMLDivElement, ProjectsProps>(({scrollToProjects}
                                 label: 'Home - scroll to projects'
                             });
 
+                            navigate('/projects', { replace: true });
                             scrollToProjects();
                         }}
                     >{ t('pages.home.button') }</button>

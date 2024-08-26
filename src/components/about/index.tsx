@@ -2,6 +2,7 @@ import './about.scss';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import ReactGA from 'react-ga4';
+import { useNavigate } from 'react-router-dom';
 
 interface AboutProps {
     scrollToContact: () => void;
@@ -10,6 +11,7 @@ interface AboutProps {
 const About = React.forwardRef<HTMLDivElement, AboutProps>(({ scrollToContact}, ref) => {
 
     const { t } = useTranslation();
+    const navigate = useNavigate();
 
     const skills = [
         'HTML',
@@ -49,6 +51,7 @@ const About = React.forwardRef<HTMLDivElement, AboutProps>(({ scrollToContact}, 
                                     label: 'About - scroll to contact'
                                 });
                                 
+                                navigate('/contact', { replace: true });
                                 scrollToContact();
                             }}
                         >{ t('pages.about.button') }</button>

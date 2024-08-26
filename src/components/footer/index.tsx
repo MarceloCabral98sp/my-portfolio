@@ -55,7 +55,7 @@ const Footer = () => {
       <div className="footer-section__copyright">
         <p>
           &copy; Copyright {currentYear}. Made by{" "}
-          <a href="#">
+          <a href="/">
             <strong>Marcelo Cabral</strong>
           </a>
         </p>
