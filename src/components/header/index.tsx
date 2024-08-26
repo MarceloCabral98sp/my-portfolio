@@ -2,6 +2,7 @@ import './header.scss';
 import { useTranslation } from 'react-i18next';
 import { useDarkMode } from '../../context/darkmode-context';
 import React, { RefObject, useState } from 'react';
+import ReactGA from 'react-ga4';
 
 type HeaderProps = {
   scrollToSection: (ref: React.RefObject<HTMLDivElement>) => void;
@@ -26,7 +27,14 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection, refs}) => {
   const ptFlagPath: string = "https://flagsapi.com/BR/flat/24.png/";
   const usFlagPath: string = "https://flagsapi.com/US/flat/24.png/";
 
-  const navigateToSection = (section: RefObject<HTMLDivElement>) => {
+  const navigateToSection = (section: RefObject<HTMLDivElement>, sectionName: string) => {
+
+    ReactGA.event({
+      'category': 'Navigation',
+      'action': 'Click',
+      'label': sectionName
+    });
+
     scrollToSection(section)
     setMenuOpen(false);
   }
@@ -37,13 +45,15 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection, refs}) => {
 
   const chooseLanguage = (selectedLanguage: string) => { 
     i18n.changeLanguage(selectedLanguage);
-    setLanguageDropdownOpen(false)
+    setLanguageDropdownOpen(false);
   }
 
   
   return (
     <header className="header-section">
-      <h2 className="header-section__logo">Marcelo Cabral</h2>
+      <h2 className="header-section__logo">
+        <a href="#">Marcelo Cabral</a>
+      </h2>
 
       <div className="header-menu">
 
@@ -55,10 +65,10 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection, refs}) => {
 
         <nav className={`header-menu__header-links ${menuOpen ? 'open' : ''}`}>
           <ul>
-            <li onClick={() => navigateToSection(refs.homeRef)}>{ t('pages.header.home')}</li>
-            <li onClick={() => navigateToSection(refs.aboutRef)}>{ t('pages.header.about')}</li>
-            <li onClick={() => navigateToSection(refs.projectsRef)}>{ t('pages.header.projects')}</li>
-            <li onClick={() => navigateToSection(refs.contactRef)}>{ t('pages.header.contact')}</li>
+            <li onClick={() => navigateToSection(refs.homeRef, 'Header - Home')}>{ t('pages.header.home')}</li>
+            <li onClick={() => navigateToSection(refs.aboutRef, 'Header - About')}>{ t('pages.header.about')}</li>
+            <li onClick={() => navigateToSection(refs.projectsRef, 'Header - Projects')}>{ t('pages.header.projects')}</li>
+            <li onClick={() => navigateToSection(refs.contactRef, 'Header - Contact')}>{ t('pages.header.contact')}</li>
             
             <li className="header-menu__header-links--language-dropdown-menu">
               <button className="desktop-nav__button" onClick={toggleLanguageDropdown}>
@@ -97,10 +107,10 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection, refs}) => {
       { menuOpen && (
         <nav className='mobile-nav'>
           <ul>
-            <li onClick={() => navigateToSection(refs.homeRef)}>{ t('pages.header.home')}</li>
-            <li onClick={() => navigateToSection(refs.aboutRef)}>{ t('pages.header.about')}</li>
-            <li onClick={() => navigateToSection(refs.projectsRef)}>{ t('pages.header.projects')}</li>
-            <li onClick={() => navigateToSection(refs.contactRef)}>{ t('pages.header.contact')}</li>
+            <li onClick={() => navigateToSection(refs.homeRef, 'Header - Home')}>{ t('pages.header.home')}</li>
+            <li onClick={() => navigateToSection(refs.aboutRef, 'Header - About')}>{ t('pages.header.about')}</li>
+            <li onClick={() => navigateToSection(refs.projectsRef, 'Header - Projects')}>{ t('pages.header.projects')}</li>
+            <li onClick={() => navigateToSection(refs.contactRef, 'Header - Contact')}>{ t('pages.header.contact')}</li>
             <li>
               <button className="mobile-nav__button" onClick={toggleLanguageDropdown}>
                 <img src={i18n.language === 'pt-BR' ? ptFlagPath: usFlagPath} alt="Language Flag" />

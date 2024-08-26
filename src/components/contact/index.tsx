@@ -3,6 +3,7 @@ import { FormEvent, forwardRef } from "react";
 import { useTranslation } from "react-i18next";
 import { sendEmail } from "../../services/email-sender/email-sender";
 import Swal from "sweetalert2";
+import ReactGA from 'react-ga4';
 
 const Contact = forwardRef<HTMLDivElement>((_, ref) => {
 
@@ -10,6 +11,12 @@ const Contact = forwardRef<HTMLDivElement>((_, ref) => {
 
     const onSubmit = async (event: FormEvent) => {
         event.preventDefault();
+
+        ReactGA.event({
+            'category': 'Form',
+            'action': 'Submit',
+            'label': 'Submit'
+        });
 
         const form = event.target as HTMLFormElement;
         const formData = new FormData(form);

@@ -1,6 +1,7 @@
 import './about.scss';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import ReactGA from 'react-ga4';
 
 interface AboutProps {
     scrollToContact: () => void;
@@ -41,7 +42,15 @@ const About = React.forwardRef<HTMLDivElement, AboutProps>(({ scrollToContact}, 
 
                         <button 
                             className='about-section__description-button btn'
-                            onClick={scrollToContact}
+                            onClick={() => {
+                                ReactGA.event({
+                                    category: 'Navigation',
+                                    action: 'Click',
+                                    label: 'About - scroll to contact'
+                                });
+                                
+                                scrollToContact();
+                            }}
                         >{ t('pages.about.button') }</button>
                     </div>
 
