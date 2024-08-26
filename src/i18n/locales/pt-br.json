@@ -18,9 +18,10 @@
                 "subtitle": "Aqui você encontrará informações sobre mim, como minha experiência e habilidades em programação.",
                 "info-title": "Quem sou eu?",
                 "info-description": [
-                    "Eu sou apaixonado por construção de aplicações e trabalho como TI desde 2019. Terminei a graduação em Análise e Desenvolvimento de Sistemas em 2020, e desde então já tive experiência dentro da área de TI como Quality Assurance e como desenvolvedor.",
-                    "Como desenvolvedor, atuei na modernização de uma plataforma de investimentos de um grande banco utilizando Angular nas versões 8 e 12, Jasmine, Jest, CMS da Oracle, CloudBees, Google Analytics, e mais. Como QA, atuei na criação e execução de casos de testes, HP ALM, Octane e técnica BDD para desenvolvimento ágil.",
-                    "Estou aberto a oportunidades de trabalho onde eu possa contribuir, aprender e crescer. Se você tiver uma oportunidade que corresponda às minhas habilidades e experiência, entre em contato comigo."
+                    "Sou um profissional apaixonado por construção de aplicações, com experiência em TI desde 2019. Concluí minha graduação em Análise e Desenvolvimento de Sistemas em 2020 e desde então tenho atuado em diversas frentes da área de TI, tanto como Quality Assurance quanto como Desenvolvedor.",
+                    "Como Desenvolvedor, participei da modernização de uma plataforma de investimentos para um grande banco, trabalhando com Angular (versões 8 e 12), Jasmine, Jest, CMS da Oracle, CloudBees e Google Analytics. Minha experiência inclui o desenvolvimento de soluções robustas e a integração com ferramentas e tecnologias modernas.",
+                    "Na minha atuação como QA, fui responsável pela criação e execução de casos de teste, utilizando ferramentas como HP ALM e Octane, além de aplicar técnicas de BDD (Behavior-Driven Development) para garantir a qualidade em ambientes de desenvolvimento ágil.",
+                    "Estou em busca de novas oportunidades que me permitam contribuir com minhas habilidades, aprender e crescer profissionalmente. Se você conhece uma posição que se alinha com minha experiência e objetivos, ficaria feliz em conversar."
                 ],
                 "skills-title": "Habilidades",
                 "button": "Contato"

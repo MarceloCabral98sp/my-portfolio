@@ -18,9 +18,10 @@
                 "subtitle": "Here you will find information about me, such as my experience and skills within programming.",
                 "info-title": "Who am i?",
                 "info-description": [
-                    "I am passionate about building applications and have been working as an IT professional since 2019. I graduated in Systems Analysis and Development in 2020, and since then I have had experience in the IT area as a Quality Assurance and as a developer.",
-                    "As a developer, I worked on the modernization of an investment platform for a large bank using Angular versions 8 and 12, Jasmine, Jest, Oracle CMS, CloudBees, Google Analytics, and more. As a QA, I worked on creating and executing test cases, HP ALM, Octane, and BDD techniques for agile development.",
-                    "I am open to job opportunities where I can contribute, learn and grow. If you have an opportunity that matches my skills and experience, please contact me."
+                    "I am a professional passionate about building applications, with experience in IT since 2019. I completed my degree in Systems Analysis and Development in 2020 and since then I have worked in several areas of the IT area, both as Quality Assurance and as a Developer.",
+                    "As a Developer, I participated in the modernization of an investment platform for a large bank, working with Angular (versions 8 and 12), Jasmine, Jest, Oracle CMS, CloudBees and Google Analytics. My experience includes developing robust solutions and integrating with modern tools and technologies.",
+                    "In my role as Tester, I was responsible for creating and executing test cases, using tools such as HP ALM and Octane, in addition to applying BDD (Behavior-Driven Development) techniques to ensure quality in agile development environments.",
+                    "I am looking for new opportunities that allow me to contribute my skills, learn and grow professionally. If you know of a position that aligns with my experience and goals, I would be happy to talk."
                 ],
                 "skills-title": "Skills",
                 "button": "contact"

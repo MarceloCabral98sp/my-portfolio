@@ -41,6 +41,7 @@ const About = React.forwardRef<HTMLDivElement, AboutProps>(({ scrollToContact}, 
                         <p>{ t('pages.about.info-description.0')}</p>
                         <p>{ t('pages.about.info-description.1')}</p>
                         <p>{ t('pages.about.info-description.2')} </p>
+                        <p>{ t('pages.about.info-description.3')} </p>
 
                         <button 
                             className='about-section__description-button btn'
