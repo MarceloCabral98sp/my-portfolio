@@ -12,6 +12,15 @@
 
 .header-section__logo {
   text-transform: uppercase;
+
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #087ea4;
+  }
 }
 
 .header-menu {

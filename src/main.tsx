@@ -5,8 +5,12 @@ import App from './App.tsx';
 import i18n from './i18n/index.ts';
 import { DarkModeProvider } from './context/darkmode-context.tsx';
 import { I18nextProvider } from 'react-i18next';
+import ReactGA from 'react-ga4';
 
 const rootElement = document.getElementById('root');
+
+ReactGA.initialize('G-K2HD0TSC0P');
+ReactGA.send('pageview');
 
 if(rootElement) {
   const root = ReactDOM.createRoot(rootElement);
