@@ -5,7 +5,7 @@
   --color-primary: #333333;
   --color-secondary: #666666;
 
-  --background-image: linear-gradient(to right, rgba(245, 245, 245, 0.95), rgba(245, 245, 245, 0.95)), url(src/assets/images/lightmode-image.png);
+  --background-image: linear-gradient(to right, rgba(245, 245, 245, 0.95), rgba(245, 245, 245, 0.95)), url(/assets/images/lightmode-image.png);
   --box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
   --border-bottom: 1px solid #eeeeee;
 }
@@ -17,7 +17,7 @@
   --color-primary: #ffffff;
   --color-secondary: rgba(255,255,255,0.7);
 
-  --background-image: url(src/assets/images/darkmode-image.png);
+  --background-image: url(/assets/images/darkmode-image.png);
   --box-shadow: 0 10px 100px rgba(255, 255, 255, 0.1);
   --border-bottom: 1px solid #666666;
 }

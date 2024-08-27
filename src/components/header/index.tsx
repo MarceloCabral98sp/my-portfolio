@@ -24,8 +24,8 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection, refs}) => {
 
   const navigate = useNavigate();
 
-  const darkIconPath: string = 'src/assets/icons/moon.png';
-  const lightIconPath: string = 'src/assets/icons/sun.png';
+  const darkIconPath: string = 'assets/icons/moon.png';
+  const lightIconPath: string = 'assets/icons/sun.png';
   const ptFlagPath: string = "https://flagsapi.com/BR/flat/24.png/";
   const usFlagPath: string = "https://flagsapi.com/US/flat/24.png/";
 

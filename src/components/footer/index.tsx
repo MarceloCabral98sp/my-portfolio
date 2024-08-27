@@ -24,7 +24,7 @@ const Footer = () => {
             onClick={() => trackLinkClick("GitHub")}
           >
             <img
-              src="src/assets/icons/github-svgrepo-com.svg"
+              src="/assets/icons/github-svgrepo-com.svg"
               alt={t("pages.footer.icons-description.github")}
             />
           </a>
@@ -35,7 +35,7 @@ const Footer = () => {
             onClick={() => trackLinkClick("Linkedin")}
           >
             <img
-              src="src/assets/icons/linkedin-svgrepo-com.svg"
+              src="/assets/icons/linkedin-svgrepo-com.svg"
               alt={t("pages.footer.icons-description.linkedin")}
             />
           </a>
@@ -46,7 +46,7 @@ const Footer = () => {
             onClick={() => trackLinkClick("Youtube")}
           >
             <img
-              src="src/assets/icons/youtube-svgrepo-com.svg"
+              src="/assets/icons/youtube-svgrepo-com.svg"
               alt={t("pages.footer.icons-description.youtube")}
             />
           </a>
