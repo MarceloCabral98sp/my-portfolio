@@ -10,7 +10,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 const rootElement = document.getElementById('root');
 
-ReactGA.initialize('G-K2HD0TSC0P');
+ReactGA.initialize('G-K22ZWZRHNX');
 ReactGA.send('pageview');
 
 if(rootElement) {

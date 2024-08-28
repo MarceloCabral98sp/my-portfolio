@@ -194,6 +194,9 @@
 }
 
 @media (max-width: 768px) {
+  .header-section {
+    padding: 16px;
+  }
   .header-menu__darkmode-container {
     display: block;
     margin-right: 20px;
@@ -209,6 +212,7 @@
 
   .mobile-nav {
     display: flex;
+    top: 61px;
   }
 }
 
