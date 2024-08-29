@@ -9,7 +9,7 @@ import ReactGA from 'react-ga4';
 import { BrowserRouter } from 'react-router-dom';
 
 const rootElement = document.getElementById('root');
-const trackingId = 'G-5QQR4RZVT0';
+const trackingId = 'G-PEVR2PYF1B';
 
 ReactGA.initialize(trackingId);
 ReactGA.send('pageview');
