@@ -29,7 +29,7 @@ O site tem como objetivo apresentar um pouco sobre mim, meus projetos, habilidad
 
 ## 📸 Preview
 
-Você pode acessar o portfólio online [clicando aqui](https://marcelohcabral.com) *(altere com seu link real)*.
+Você pode acessar o portfólio online [clicando aqui](https://marcelohcabral.com)
 
 ---
 
