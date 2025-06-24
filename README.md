@@ -1,30 +1,49 @@
-# React + TypeScript + Vite
+# 💼 Meu Portfólio – Desenvolvedor Web (React + TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o repositório do meu portfólio pessoal, desenvolvido com **React**, **TypeScript** e **Vite**, com foco em performance, acessibilidade e uma experiência fluida.
 
-Currently, two official plugins are available:
+O site tem como objetivo apresentar um pouco sobre mim, meus projetos, habilidades e facilitar o contato com recrutadores ou colaboradores.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🧠 Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- 🧍‍♂️ **Sobre mim** – Seção com resumo da minha trajetória, perfil profissional e tecnologias dominadas.
+- 💼 **Projetos** – Lista de projetos desenvolvidos, com imagens, links e descrições.
+- 📬 **Formulário de contato** – Para mensagens diretas via e-mail.
+- 🌗 **Dark Mode** – Alternância entre temas claro e escuro.
+- 🌐 **Internacionalização (i18n)** – Suporte a múltiplos idiomas (ex: português e inglês).
+- 📱 **Responsivo** – Layout adaptado para desktop, tablet e mobile.
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## 🛠️ Tecnologias Utilizadas
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [i18next](https://www.i18next.com/) para internacionalização
+- [W3Forms](https://w3forms.com/) para envio de e-mails via formulário
+- Armazenamento local para **dark mode toggle**
+
+---
+
+## 📸 Preview
+
+Você pode acessar o portfólio online [clicando aqui](https://marcelohcabral.com) *(altere com seu link real)*.
+
+---
+
+## 🚀 Como executar localmente
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/seu-portfolio.git
+
+# Acesse a pasta
+cd seu-portfolio
+
+# Instale as dependências
+npm install
+
+# Rode a aplicação
+npm run dev
