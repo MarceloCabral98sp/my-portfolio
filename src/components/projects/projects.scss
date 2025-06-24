@@ -57,3 +57,12 @@
         }
     }
 }
+
+@media(max-width: 570px) {
+    .projects-section__project-card {
+        img {
+            height: auto;
+            max-height: 207px;
+        }
+    }
+}

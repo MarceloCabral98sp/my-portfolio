@@ -16,12 +16,15 @@ const Projects = forwardRef<HTMLDivElement>((_, ref) => {
 
                 <div>
                     <div className='projects-section__project-card'>
-                        <img src="/assets/images/coming-soon.jpg" alt={ t('pages.projects.coming-soon') } />
+                        <img src="/assets/images/lockit.png" alt={ t('pages.projects.projects.0.alt') } />
                         <div>
                             <h2>{ t('pages.projects.projects.0.project-title') }</h2>
                             <p>{ t('pages.projects.projects.0.project-description') }</p>
                         
-                            <button className='btn'>
+                            <button 
+                                className='btn'
+                                onClick={() => window.open('https://github.com/MarceloCabral98sp/jwt-auth-frontend')}
+                            >
                                 { t('pages.projects.button') }
                             </button>
                         </div>

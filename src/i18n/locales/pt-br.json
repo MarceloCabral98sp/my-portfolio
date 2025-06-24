@@ -31,8 +31,9 @@
                 "subtitle": "Aqui você encontrará alguns dos meus projetos pessoais que criei e que estão por vir.",
                 "projects": [
                     {
-                        "project-title": "Em Breve",
-                        "project-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, labore aspernatur! Quae quos, ad sapiente cum molestiae ipsa a earum? Optio, et voluptatum dolores sit quisquam nesciunt."
+                        "project-title": "LockIt!",
+                        "project-description": "Aplicação fullstack com autenticação via JWT, permitindo cadastro, login seguro e controle de sessão. Desenvolvida com Angular no frontend e Spring Boot no backend, utilizando banco H2 em memória para fins de demonstração.",
+                        "alt": "Imagem do projeto LockIt"
                     },
                     {
                         "project-title": "Em Breve",

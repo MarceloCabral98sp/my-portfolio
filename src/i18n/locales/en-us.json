@@ -31,8 +31,9 @@
                 "subtitle": "Here you will find some of my personal projects that I have created and that are upcoming.",
                 "projects": [
                     {
-                        "project-title": "Coming Soon",
-                        "project-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, labore aspernatur! Quae quos, ad sapiente cum molestiae ipsa a earum? Optio, et voluptatum dolores sit quisquam nesciunt."
+                        "project-title": "LockIt!",
+                        "project-description": "Fullstack application with authentication via JWT, allowing registration, secure login and session control. Developed with Angular on the frontend and Spring Boot on the backend, using H2 in-memory database for demonstration purposes.",
+                        "alt": "Image of LockIt project"
                     },
                     {
                         "project-title": "Coming Soon",
